@@ -43,4 +43,4 @@
 ```
 
 ## Задание
-- будет
+- Видео - 09RustyAssignmentIntro
