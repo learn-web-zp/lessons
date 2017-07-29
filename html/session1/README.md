@@ -32,15 +32,9 @@
 - [MDN: HTML - справочник атрибутов](https://developer.mozilla.org/ru/docs/Web/HTML/Attributes)
 - видео курсов в чате
 
-## Конфигурация VS Code
+## Видео
 
-```
-// Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию.
-{
-    "files.autoSave": "onFocusChange",
-    "git.confirmSync": false
-}
-```
+- section3-HTML
 
 ## Задание
 - Видео - 09RustyAssignmentIntro
