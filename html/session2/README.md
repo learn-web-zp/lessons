@@ -34,9 +34,9 @@ HTML5 валидация
 [30 селекторов к прочтению](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 
 - селекторы
-    - элемент (имя тега)
-    - class (.className)
-    - id (#id)
+    - элемент (имя тега): `a`, `li`, `ul`, ...
+    - class (.className): `.product`, `.list`, `.center`, ...
+    - id (#id): `#product-page`, `#content`, `#footer`, ...
 - вложенные селекторы
     - x y
     - #x y
