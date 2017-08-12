@@ -11,10 +11,10 @@ tags: css
 
 ## Где смотреть
 
-[О Float подробно](https://habrahabr.ru/post/142486/)
-[Google](https://google.com) - весь мир
-[MDN: CSS](https://developer.mozilla.org/ru/docs/Web/CSS) - справочник, примеры, статьи
-[Bacon Ipsum](https://baconipsum.com) - когда устал от Lorem Ipsum
+- [О Float подробно](https://habrahabr.ru/post/142486/)
+- [Google](https://google.com) - весь мир
+- [MDN: CSS](https://developer.mozilla.org/ru/docs/Web/CSS) - справочник, примеры, статьи
+- [Bacon Ipsum](https://baconipsum.com) - когда устал от Lorem Ipsum
 
 ## Где содержимое?
 
