@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>HTML Session 3. Основы CSS | Learn Web Zp - Lessons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="В этом уроке изучаем популярные правила (стили): шрифты, цвета, отступы, позиционирование селекторы и выборка cascading - наследование стилей  Где смотретьMDN: CSS - справочник, примеры, статьи Цветаc">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML Session 3. Основы CSS">
+<meta property="og:url" content="http://learn-web-zp.github.io/2017/08/05/html/session3/index.html">
+<meta property="og:site_name" content="Learn Web Zp - Lessons">
+<meta property="og:description" content="В этом уроке изучаем популярные правила (стили): шрифты, цвета, отступы, позиционирование селекторы и выборка cascading - наследование стилей  Где смотретьMDN: CSS - справочник, примеры, статьи Цветаc">
+<meta property="og:locale" content="ru">
+<meta property="og:updated_time" content="2017-08-05T19:12:07.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML Session 3. Основы CSS">
+<meta name="twitter:description" content="В этом уроке изучаем популярные правила (стили): шрифты, цвета, отступы, позиционирование селекторы и выборка cascading - наследование стилей  Где смотретьMDN: CSS - справочник, примеры, статьи Цветаc">
+  
+    <link rel="alternate" href="/atom.xml" title="Learn Web Zp - Lessons" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/lessons/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/lessons/" id="logo">Learn Web Zp - Lessons</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/lessons/" id="subtitle">Учимся строить Web</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/lessons/">Home</a>
+        
+          <a class="main-nav-link" href="/lessons/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS-каналы"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Поиск"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://learn-web-zp.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-html/session3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/lessons/2017/08/05/html/session3/" class="article-date">
+  <time datetime="2017-08-05T18:58:04.000Z" itemprop="datePublished">2017-08-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      HTML Session 3. Основы CSS
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="В-этом-уроке"><a href="#В-этом-уроке" class="headerlink" title="В этом уроке"></a>В этом уроке</h2><ul>
+<li>изучаем популярные правила (стили): шрифты, цвета, отступы, позиционирование</li>
+<li>селекторы и выборка</li>
+<li>cascading - наследование стилей</li>
+</ul>
+<h2 id="Где-смотреть"><a href="#Где-смотреть" class="headerlink" title="Где смотреть"></a>Где смотреть</h2><p><a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank" rel="external">MDN: CSS</a> - справочник, примеры, статьи</p>
+<h2 id="Цвета"><a href="#Цвета" class="headerlink" title="Цвета"></a>Цвета</h2><p><code>color</code> задает цвет текста:</p>
+<p><code>* { color: red }</code></p>
+<p>Цвет может быть задан </p>
+<ul>
+<li>шестнадцатеричным (hex) кодом: <code>#a6e300</code>, <code>#ffffff</code>, <code>#dd1313</code><ul>
+<li>рекомендуемый способ</li>
+<li>каждая пара символов задает значение R|G|B цвета в диапазоне от 0 до 255 (00..ff)</li>
+<li>если символы попарно одинаковы - можно использовать сокращенный вид: <code>#aa11ff</code> === <code>#a1f</code></li>
+</ul>
+</li>
+<li>именем: <code>green</code>, <code>red</code>, <code>orange</code></li>
+<li>rgb-функцией: <code>rgb(117, 25, 255)</code></li>
+</ul>
+<p><a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank" rel="external">Именованные цвета</a></p>
+<h2 id="Единицы-размера"><a href="#Единицы-размера" class="headerlink" title="Единицы размера"></a>Единицы размера</h2><p><a href="https://www.w3.org/Style/Examples/007/units.ru.html" target="_blank" rel="external">Единицы размера на W3.org</a></p>
+<ul>
+<li><code>px</code> - задает рамер в пикселах (точках экрана)</li>
+<li><code>%</code> - относительный размер в процентах</li>
+<li><code>em</code> - относительный размер шрифта (к размеру шрифта текущего элемента)</li>
+<li><code>rem</code> - относительный размер шрифта (к размеру шрифта корневого элемента)</li>
+</ul>
+<h2 id="Шрифты"><a href="#Шрифты" class="headerlink" title="Шрифты"></a>Шрифты</h2><p><a href="http://htmlbook.ru/css/font" target="_blank" rel="external">Font на HTMLBook</a></p>
+<p>font (-…)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">font: [font-style||font-variant||font-weight] font-size [/line-height] font-family | inherit</div><div class="line"></div><div class="line">/* Полная запись */</div><div class="line">* &#123;</div><div class="line">    font-weight: bold;</div><div class="line">    font-size: 16px;</div><div class="line">    line-height: 24px;</div><div class="line">    font-family: monospace;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Короткая запись */</div><div class="line">* &#123; </div><div class="line">    font: bold 16px/24px monospace; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Бордюры"><a href="#Бордюры" class="headerlink" title="Бордюры"></a>Бордюры</h2><p><a href="http://htmlbook.ru/css/border" target="_blank" rel="external">Border на HTMLBook</a></p>
+<p>border (-…)<br>border-radius</p>
+<h2 id="Отступы"><a href="#Отступы" class="headerlink" title="Отступы"></a>Отступы</h2><p><a href="http://htmlbook.ru/css/margin" target="_blank" rel="external">Margin</a> и <a href="http://htmlbook.ru/css/padding" target="_blank" rel="external">Padding</a></p>
+<p><code>margin</code><br><code>padding</code></p>
+<h2 id="Размеры"><a href="#Размеры" class="headerlink" title="Размеры"></a>Размеры</h2><p><code>width</code> и <code>height</code> позволяют задать размеры <strong>блочных</strong> элементов.</p>
+<h2 id="Позиционирование"><a href="#Позиционирование" class="headerlink" title="Позиционирование"></a>Позиционирование</h2><ul>
+<li><code>float</code> - позволяет задать позиционирование слева или справа вне обычного порядка вывода элементов (<code>float: left</code>)</li>
+<li><code>clear</code> - <code>left</code>, <code>right</code>, <code>both</code> - запрещает обтекание другими элементами. Обычно используется в виде <code>clear: both</code> для сброса эффектов <code>float</code></li>
+<li><code>position</code> - <code>absolute</code>, <code>fixed</code>, <code>relative</code>, <code>static</code> - позиционирование элемента на странице</li>
+</ul>
+<h2 id="Отображение"><a href="#Отображение" class="headerlink" title="Отображение"></a>Отображение</h2><p><code>display</code> - задает</p>
+<h3 id="Блочные-и-строчные-элементы"><a href="#Блочные-и-строчные-элементы" class="headerlink" title="Блочные и строчные элементы"></a>Блочные и строчные элементы</h3><p><code>block</code> - блочный элемент: занимает всю доступную ширину, можно задать ширину, высоту, отступы<br><code>inline</code> - строчный элемент: занимает только ширину, необходимую для содержимого<br><code>inline-block</code> - строчный элемент с возможностью задавать отступы</p>
+<h3 id="Специальное-отображение"><a href="#Специальное-отображение" class="headerlink" title="Специальное отображение"></a>Специальное отображение</h3><p><code>none</code> - скрывает (вырезает) элемент. Альтернативно - <code>visibility: hidden</code> делает элемент невидимым но он продолжает занимать отведенное ему место на странице<br><code>table</code>, <code>table-...</code> - превращает элемет в аналог таблицы/строки/ячейки</p>
+<h2 id="Специфичность-селекторов"><a href="#Специфичность-селекторов" class="headerlink" title="Специфичность селекторов"></a>Специфичность селекторов</h2><p>Если несколько селекторов указывают на один элемент, порядок применения CSS правил зависит от “веса” (точности) селектора. Таким образом </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">li &#123;</div><div class="line">    color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">body li &#123;</div><div class="line">    color: blue; /* будет применен т.к. более точный селектор */</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Рецепты"><a href="#Рецепты" class="headerlink" title="Рецепты"></a>Рецепты</h2><p><a href="http://htmlbook.ru/faq" target="_blank" rel="external">Как сделать …</a></p>
+<h2 id="Домашнее-задание"><a href="#Домашнее-задание" class="headerlink" title="Домашнее задание"></a>Домашнее задание</h2><p>Видео</p>
+<ul>
+<li><p>session5 - 09  </p>
+</li>
+<li><p>ознакомиться с рецептами.</p>
+</li>
+<li>сделать центрированную картинку с паспарту</li>
+<li>сделать страницу с параллаксом</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://learn-web-zp.github.io/2017/08/05/html/session3/" data-id="cj69rrg100005kdr2xpixwrk1" class="article-share-link">Поделиться</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/lessons/tags/css/">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/lessons/2017/08/12/html/session4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Следующий</strong>
+      <div class="article-nav-title">
+        
+          HTML Session 4. Продолжаем CSS
+        
+      </div>
+    </a>
+  
+  
+    <a href="/lessons/2017/08/05/html/session2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Предыдущий</strong>
+      <div class="article-nav-title">HTML Session 2. Формы. Введение в CSS</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Метки</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/lessons/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/lessons/tags/html/">html</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Облако меток</h3>
+    <div class="widget tagcloud">
+      <a href="/lessons/tags/css/" style="font-size: 10px;">css</a> <a href="/lessons/tags/html/" style="font-size: 10px;">html</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Архив</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/lessons/archives/2017/08/">август 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Недавние записи</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/lessons/2017/08/12/html/session4/">HTML Session 4. Продолжаем CSS</a>
+          </li>
+        
+          <li>
+            <a href="/lessons/2017/08/05/html/session3/">HTML Session 3. Основы CSS</a>
+          </li>
+        
+          <li>
+            <a href="/lessons/2017/08/05/html/session2/">HTML Session 2. Формы. Введение в CSS</a>
+          </li>
+        
+          <li>
+            <a href="/lessons/2017/08/05/html/session1/">HTML Session 1 - введение в HTML</a>
+          </li>
+        
+          <li>
+            <a href="/lessons/2017/08/05/html/session0/">HTML Session 0 - введение в веб-разработку</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Oleksii Volkov<br>
+      Создано с помощью <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/lessons/" class="mobile-nav-link">Home</a>
+  
+    <a href="/lessons/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/lessons/fancybox/jquery.fancybox.css">
+  <script src="/lessons/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/lessons/js/script.js"></script>
+
+  </div>
+</body>
+</html>

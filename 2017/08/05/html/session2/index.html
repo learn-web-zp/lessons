@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>HTML Session 2. Формы. Введение в CSS | Learn Web Zp - Lessons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="В этом урокеHTML: Формы form  label (for=”inputID”) input type=”radio” type=”checkbox” type=”number” type=”submit” (или &amp;lt;button&amp;gt;)   аттрибуты id name valueСпециальные типы     type=”email”  type">
+<meta name="keywords" content="html,css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML Session 2. Формы. Введение в CSS">
+<meta property="og:url" content="http://learn-web-zp.github.io/2017/08/05/html/session2/index.html">
+<meta property="og:site_name" content="Learn Web Zp - Lessons">
+<meta property="og:description" content="В этом урокеHTML: Формы form  label (for=”inputID”) input type=”radio” type=”checkbox” type=”number” type=”submit” (или &amp;lt;button&amp;gt;)   аттрибуты id name valueСпециальные типы     type=”email”  type">
+<meta property="og:locale" content="ru">
+<meta property="og:updated_time" content="2017-08-05T19:33:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML Session 2. Формы. Введение в CSS">
+<meta name="twitter:description" content="В этом урокеHTML: Формы form  label (for=”inputID”) input type=”radio” type=”checkbox” type=”number” type=”submit” (или &amp;lt;button&amp;gt;)   аттрибуты id name valueСпециальные типы     type=”email”  type">
+  
+    <link rel="alternate" href="/atom.xml" title="Learn Web Zp - Lessons" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/lessons/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/lessons/" id="logo">Learn Web Zp - Lessons</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/lessons/" id="subtitle">Учимся строить Web</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/lessons/">Home</a>
+        
+          <a class="main-nav-link" href="/lessons/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS-каналы"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Поиск"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://learn-web-zp.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-html/session2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/lessons/2017/08/05/html/session2/" class="article-date">
+  <time datetime="2017-08-05T17:58:03.000Z" itemprop="datePublished">2017-08-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      HTML Session 2. Формы. Введение в CSS
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="В-этом-уроке"><a href="#В-этом-уроке" class="headerlink" title="В этом уроке"></a>В этом уроке</h2><h3 id="HTML-Формы"><a href="#HTML-Формы" class="headerlink" title="HTML: Формы"></a>HTML: Формы</h3><ul>
+<li><p>form</p>
+<ul>
+<li>label (for=”inputID”)</li>
+<li>input<ul>
+<li>type=”radio”</li>
+<li>type=”checkbox”</li>
+<li>type=”number”</li>
+<li>type=”submit” (или <code>&lt;button&gt;</code>)</li>
+</ul>
+</li>
+<li>аттрибуты<ul>
+<li>id</li>
+<li>name</li>
+<li>value<br>Специальные типы</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>type=”email”</p>
+</li>
+<li>type=”password”</li>
+</ul>
+<p>HTML5 валидация</p>
+<ul>
+<li>required</li>
+<li>pattern</li>
+<li>min</li>
+<li>max</li>
+<li>minlength</li>
+<li>maxlength</li>
+</ul>
+<h3 id="CSS-основы"><a href="#CSS-основы" class="headerlink" title="CSS: основы"></a>CSS: основы</h3><p><a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank" rel="external">30 селекторов к прочтению</a></p>
+<ul>
+<li>селекторы<ul>
+<li>элемент (имя тега): <code>a</code>, <code>li</code>, <code>ul</code>, …</li>
+<li>class (.className): <code>.product</code>, <code>.list</code>, <code>.center</code>, …</li>
+<li>id (#id): <code>#product-page</code>, <code>#content</code>, <code>#footer</code>, …</li>
+</ul>
+</li>
+<li>вложенные селекторы<ul>
+<li>x y</li>
+<li>#x y</li>
+<li>#x .y</li>
+<li>.x #y</li>
+<li>…<ul>
+<li>комбинированные селекторы</li>
+</ul>
+</li>
+<li>x.y</li>
+<li>x y.z</li>
+<li>x#y z</li>
+<li>…</li>
+</ul>
+</li>
+<li>особые селекторы<ul>
+<li><code>*</code></li>
+<li>x &gt; y</li>
+</ul>
+</li>
+<li>псевдоклассы<ul>
+<li>:link</li>
+<li>:hover</li>
+<li>:checked</li>
+<li>:before</li>
+<li>:after</li>
+<li>:first-child | :last-child</li>
+<li>:nth-of-type</li>
+</ul>
+</li>
+</ul>
+<h2 id="Видео"><a href="#Видео" class="headerlink" title="Видео"></a>Видео</h2><ul>
+<li>section4-html-tables-and-forms</li>
+<li>section5-css-basics</li>
+</ul>
+<h2 id="Домашнее-задание"><a href="#Домашнее-задание" class="headerlink" title="Домашнее задание"></a>Домашнее задание</h2><p>Видео</p>
+<ul>
+<li>session4 - 02</li>
+<li>session4 - 10</li>
+<li>session5 - 09  </li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://learn-web-zp.github.io/2017/08/05/html/session2/" data-id="cj69rrg0u0002kdr2nlp18ntq" class="article-share-link">Поделиться</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/lessons/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/lessons/tags/html/">html</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/lessons/2017/08/05/html/session3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Следующий</strong>
+      <div class="article-nav-title">
+        
+          HTML Session 3. Основы CSS
+        
+      </div>
+    </a>
+  
+  
+    <a href="/lessons/2017/08/05/html/session1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Предыдущий</strong>
+      <div class="article-nav-title">HTML Session 1 - введение в HTML</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Метки</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/lessons/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/lessons/tags/html/">html</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Облако меток</h3>
+    <div class="widget tagcloud">
+      <a href="/lessons/tags/css/" style="font-size: 10px;">css</a> <a href="/lessons/tags/html/" style="font-size: 10px;">html</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Архив</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/lessons/archives/2017/08/">август 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Недавние записи</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/lessons/2017/08/12/html/session4/">HTML Session 4. Продолжаем CSS</a>
+          </li>
+        
+          <li>
+            <a href="/lessons/2017/08/05/html/session3/">HTML Session 3. Основы CSS</a>
+          </li>
+        
+          <li>
+            <a href="/lessons/2017/08/05/html/session2/">HTML Session 2. Формы. Введение в CSS</a>
+          </li>
+        
+          <li>
+            <a href="/lessons/2017/08/05/html/session1/">HTML Session 1 - введение в HTML</a>
+          </li>
+        
+          <li>
+            <a href="/lessons/2017/08/05/html/session0/">HTML Session 0 - введение в веб-разработку</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Oleksii Volkov<br>
+      Создано с помощью <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/lessons/" class="mobile-nav-link">Home</a>
+  
+    <a href="/lessons/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/lessons/fancybox/jquery.fancybox.css">
+  <script src="/lessons/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/lessons/js/script.js"></script>
+
+  </div>
+</body>
+</html>
